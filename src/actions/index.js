@@ -1,5 +1,5 @@
-const ADD_FEATURES = 'ADD_FEATURES';
-const REMOVE_FEATURES = 'REMOVE_FEATURES';
+export const ADD_FEATURES = 'ADD_FEATURES';
+export const REMOVE_FEATURES = 'REMOVE_FEATURES';
 
 export const addFeatures = (feature) => {
     return {

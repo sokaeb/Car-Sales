@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { addFeatures, removeFeatures } from './actions/index';
 import Header from './components/Header';
@@ -28,7 +28,7 @@ const App = (props) => {
     <div className="boxes">
       <div className="box">
         <Header car={props.car} />
-        <AddedFeatures car={props.car} />
+        <AddedFeatures car={props.car} removeFeatures={props.removeFeatures}/>
       </div>
       <div className="box">
         <AdditionalFeatures additionalFeatures={props.additionalFeatures} addFeatures={props.addFeatures} />
